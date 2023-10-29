@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/RockFitness/static/css/main.f361b168.css",
+    "main.js": "/RockFitness/static/js/main.eddf0e71.js",
+    "static/media/Italy.jpg": "/RockFitness/static/media/Italy.7c0139ea61b85366949e.jpg",
+    "static/media/Germany.jpg": "/RockFitness/static/media/Germany.bafb3361cc6323aedad5.jpg",
+    "static/media/Countries.jpg": "/RockFitness/static/media/Countries.3c3402fcebcebbf51795.jpg",
+    "static/media/hardorckDumbell2.jpeg": "/RockFitness/static/media/hardorckDumbell2.7cfad06516ddd0a1df62.jpeg",
+    "static/media/Canada.jpg": "/RockFitness/static/media/Canada.3b4ace3525396ffde0d3.jpg",
+    "static/media/hardrockdumbell3.jpeg": "/RockFitness/static/media/hardrockdumbell3.0263ae4ba104e51c8573.jpeg",
+    "static/media/cat.jpg": "/RockFitness/static/media/cat.ae3a259963ae6e34cee6.jpg",
+    "static/media/hardRockdumbell.jpeg": "/RockFitness/static/media/hardRockdumbell.6f5e2aea6027b43fcffa.jpeg",
+    "index.html": "/RockFitness/index.html",
+    "main.f361b168.css.map": "/RockFitness/static/css/main.f361b168.css.map",
+    "main.eddf0e71.js.map": "/RockFitness/static/js/main.eddf0e71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f361b168.css",
+    "static/js/main.eddf0e71.js"
+  ]
+}
