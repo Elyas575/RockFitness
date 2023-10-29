@@ -1,38 +1,263 @@
-.App {
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+
+  display: block;
+  border-radius: 10px;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: #143774;
+  margin-top: 1em;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+
+  font-size: 2rem;
+  margin: 0;
+}
+
+a {
+  color: 1792d2;
+  font-weight: bolder;
+}
+
+a:hover,
+a:focus {
+  color: #143774;
+}
+strong {
+  font-weight: 700;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.article-title {
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+  margin-bottom: 0.425em;
+}
+
+.article-body {
+  line-height: 1.2em;
+}
+
+.article-read-more,
+.aritcle-info {
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+.article-read-more:hover,
+.article-read-more:focus {
+  color: lightpink;
+  text-decoration: underline;
+}
+
+/* Layout */
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 3em 0;
+  text-align: center;
+  margin-bottom: 2em;
+}
+z
+
+
+/* NAVIGATION */
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+nav ul {
+  flex-direction: column;
+}
+
+nav li {
+  margin: 0px;
+  padding: 0.5rem;
+}
+
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  main {
+    width: 95%;
+  }
+  aside {
+    width: 30%;
+    min-width: 200px;
+    margin-left: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+@media (min-width: 675px) {
+  .article-recent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .article-recent-main {
+    margin-top: 0;
+    width: 62%;
+    order: 2;
+  }
+
+  .article-recent-secondary {
+    width: 35%;
+    order: 1;
+  }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .article-image {
+    order: -2;
+    width: 100%;
+    min-height: 350px;
+
+    border-radius: 10px;
+  }
+}
+
+/* ARTICLES */
+
+.article-featured {
+  border-bottom: #707070 1px solid;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+
+.article-featured h2 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.article-body {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
+
+.article-image {
+  margin-top: 1em;
+}
+
+/* WIDGETS */
+
+.sidebar-widget {
+  border: 20px solid #efefef;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.widget-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wdiget-title {
+  font-size: 0.9em;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f8f8;
+  color: rgb(20, 55, 116);
+  padding: 1em 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer nav a:hover,
+footer nav a:focus {
+  color: #1792d2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer nav a.current-page {
+  border-bottom: 1px solid #707070;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer p {
+  margin: 1em 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-info {
+  font-size: 16px;
+  color: #555;
+  padding: 10px;
 }
